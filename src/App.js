@@ -30,10 +30,10 @@ function App() {
 
       <div>
         <h2>Cart</h2>
-        {cart.map((itemName, itemPrice)=> {
-          return <p>{itemName}</p>
-        })}
-        {totalPrice}
+        {cart.map((itemName, itemPrice)=> (          
+           <p>{itemName}</p>
+        ))}
+        <p>Total Price: ${totalPrice}</p>
         {/* TODO: render a list of items in the cart */}
       </div>
     </div>
